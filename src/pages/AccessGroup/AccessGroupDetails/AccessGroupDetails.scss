@@ -1,0 +1,78 @@
+//colors
+$bg-color: #ffffff;
+$primary-color: #3d405b;
+$color-small: rgba(128, 128, 128, 0.915);
+$color-dark: #363949;
+$color-icon: #323a80;
+$active-bg-color: #edf2f4d5;
+$color-white:#F1F1F1F1;
+$color-red:#ef233c;
+$border-color:rgba(128, 128, 128, 0.378);
+.accessGroupDetailsContainer{
+    color: $color-dark;
+    .accessGroupDetailsContents{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .accessGroupDetailsTop{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            .backIcon{
+                font-size: 25px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .headerDetails{
+                font-weight: 500;
+                font-size: 23px;
+            }
+        }
+        .accessGroupDetailsMiddle{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 40vw;
+            .nameContainer,.descContainer,.typeContainer{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .nameHeader,.descHeader,.typeHeader{
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                .nameContents,.descContents,.typeContents{
+                    font-size: 14px;
+                }
+            }
+        }
+        .accessGroupDetailsBottom{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .bottomHeader{
+                font-weight: 600;
+                font-size: 21px;
+            }
+            .rolesList{
+                display: flex;
+                flex-direction: row;
+                .rolesParent{
+                    flex: 1;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+                .rolesChild{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 4px;
+                    flex: 3;
+                }
+            }
+        }
+    }
+}

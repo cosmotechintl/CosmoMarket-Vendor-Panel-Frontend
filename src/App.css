@@ -1,0 +1,5 @@
+body {
+    user-select: none;
+    font-family: 'poppins',sans-serif;
+    /* overflow: hidden; */
+}
