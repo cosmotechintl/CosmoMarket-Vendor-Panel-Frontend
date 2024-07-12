@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import List from '../../../components/List/List';
 import "./AdminList.scss";
-import { toast, Toaster } from "react-hot-toast";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from '../../../utils/config';
 import { adminRequest, updateAuthToken } from '../../../utils/requestMethods';
 import Loader from "../../../components/Loader/Loader"
@@ -56,7 +57,7 @@ const AdminList = () => {
         />
         : <Loader/>
       }
-      <Toaster />
+      <ToastContainer position='top-center'/>
     </div>
   );
 };

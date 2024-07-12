@@ -4,6 +4,7 @@ import "./ChangePassword.scss";
 import { adminRequest, updateAuthToken } from "../../utils/requestMethods";
 import { BASE_URL } from '../../utils/config';
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from 'react-router-dom';
 const ChangePassword = () => {
     const navigate = useNavigate();

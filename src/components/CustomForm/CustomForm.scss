@@ -52,7 +52,7 @@ $color-white: #f1f1f1f1;
             font-size: 13px;
             color: lighten($color-dark,20%);
           }
-          input[type='text'],input[type='email'],input[type='password'] {
+          input[type='text'],input[type='email'],input[type='password'],input[type='number'],input[type='file'] {
             outline: 0;
             padding: 5px;
             min-height: 25px;
