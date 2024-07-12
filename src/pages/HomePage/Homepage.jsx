@@ -17,6 +17,12 @@ import AdminDetails from '../Admin/AdminDetails/AdminDetails';
 import EditAdmin from '../Admin/EditAdmin/EditAdmin';
 import AccessGroupDetails from '../AccessGroup/AccessGroupDetails/AccessGroupDetails';
 import BusinessHourList from '../BusinessHours/BusinessHourList/BusinessHourList';
+import ProductList from '../Product/ProductList/ProductList';
+import CreateProduct from '../Product/CreateProduct/CreateProduct';
+import FutsalList from '../Futsal/FutsalList/FutsalList';
+import CreateFutsal from '../Futsal/CreateFutsal/CreateFutsal';
+import FutsalDetails from '../Futsal/FutsalDetails/FutsalDetails';
+import EditFutsal from '../Futsal/EditFutsal/EditFutsal';
 const Homepage = () => {
   return (
     <div className="homepageContainer">
@@ -40,8 +46,14 @@ const Homepage = () => {
                 <Route path="vendorUser/create" element={<CreateAdmin />}/>
                 <Route path="vendorUser/view/:email" element={<AdminDetails />}/>
                 <Route path="vendorUser/edit/:email" element={<EditAdmin />}/>
-                <Route path="businessHour" element={<BusinessHourList />}/>
+                <Route path="setting/businessHour" element={<BusinessHourList />}/>
                 <Route path="customer" element={<CustomerList/>}/>
+                <Route path="futsal" element={<FutsalList/>}/>
+                <Route path="futsal/create" element={<CreateFutsal/>}/>
+                <Route path="futsal/view/:uuid" element={<FutsalDetails/>}/>
+                <Route path="futsal/edit/:uuid" element={<EditFutsal/>}/>
+                <Route path="product" element={<ProductList/>}/>
+                <Route path="product/create" element={<CreateProduct/>}/>
                 <Route path="reports" element={<ReportPage/>}/>
                 <Route path="setting" element={<SettingPage />}/>
                 <Route path="setting/group" element={<AccessGroupPage />}/>

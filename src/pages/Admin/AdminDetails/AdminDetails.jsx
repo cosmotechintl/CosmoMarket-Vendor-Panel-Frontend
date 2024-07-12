@@ -6,7 +6,8 @@ import { BASE_URL } from '../../../utils/config';
 import { adminRequest, updateAuthToken } from '../../../utils/requestMethods';
 import Loader from "../../../components/Loader/Loader";
 import { Link, useLocation } from 'react-router-dom';
-import toast, { Toaster } from 'react-hot-toast';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Swal from 'sweetalert2';
 
 const AdminDetails = () => {
@@ -131,7 +132,7 @@ const AdminDetails = () => {
                 </>
                 : <Loader />}
             </div>
-            <Toaster />
+            <ToastContainer position='top-center' />
         </div>
     );
 };

@@ -1,7 +1,9 @@
 import React from 'react'
 import "./Sidebar.scss"
 import { FiUsers } from "react-icons/fi";
+import { GiShoppingCart } from "react-icons/gi";
 import { LiaBusinessTimeSolid } from "react-icons/lia";
+import { GiSoccerField } from "react-icons/gi";
 import { CiSettings } from "react-icons/ci";
 import { IoPersonOutline } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
@@ -20,7 +22,9 @@ const iconMapping = {
   FiUsers,
   LiaBusinessTimeSolid,
   IoPersonOutline,
-  CiSettings
+  CiSettings,
+  GiShoppingCart,
+  GiSoccerField
 };
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -60,7 +64,7 @@ const Sidebar = () => {
           />
         </div>
       </div>
-      <ToastContainer />
+      <ToastContainer position='top-center'/>
     </div>
   )
 }

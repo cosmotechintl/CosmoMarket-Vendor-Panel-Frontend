@@ -44,7 +44,6 @@ const CustomForm = ({
                 <label htmlFor={field.name}>{field.label}</label>
                 {field.type === 'select' ? (
                   <select name={field.name} id={field.name} value={field.value} onChange={field.onChange}>
-                    <option value="" selected disabled>Select access group</option>
                     {field.options.map((option, index) => (
                       <option value={option.value} key={index}>
                         {option.label}
